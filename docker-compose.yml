@@ -1,0 +1,26 @@
+version: "3"
+services:
+  nginx:
+    restart: always
+    image: fugro/nginx_v1
+    build:
+      dockerfile: Dockerfile
+      context: ./nginx
+    ports:
+      - "3050:80"
+    depends_on:
+      - api
+      - client
+  api:
+    image: fugro/api_v1
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./server
+  client:
+    image: fugro/client_v1
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: ./client
+   

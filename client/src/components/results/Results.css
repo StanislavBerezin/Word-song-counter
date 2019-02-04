@@ -1,0 +1,26 @@
+.result_card ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.result_card ul li {
+    padding: 5px;
+}
+
+.result_card {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #1e90ff;
+
+    text-align: center;
+    border-radius: 10px;
+    background: #fff;
+    opacity: 0.8;
+    margin: 30px;
+
+}
+
+.result_card:hover {
+    opacity: 1;
+    cursor: pointer;
+}

@@ -1,0 +1,10 @@
+.error_card{
+    border:2px solid #c0392b;
+    border-radius: 10px;
+    background: #e74c3c;
+    color:#fff;
+    margin:50px;
+}
+.error_card h3{
+    font-size: 30px;
+}
